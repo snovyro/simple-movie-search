@@ -90,7 +90,7 @@ const Home = () => {
     setPage(page + 1);
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=${APIKey}&s=${search}&page=${page + 1}`
+        `https://www.omdbapi.com/?apikey=${APIKey}&s=${search}&page=${page + 1}`
       );
       setMovies(response.data.Search);
     } catch (error) {
@@ -102,7 +102,7 @@ const Home = () => {
     setPage(page - 1);
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?apikey=${APIKey}&s=${search}&page=${page - 1}`
+        `https://www.omdbapi.com/?apikey=${APIKey}&s=${search}&page=${page - 1}`
       );
       setMovies(response.data.Search);
     } catch (error) {
