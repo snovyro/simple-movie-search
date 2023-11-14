@@ -56,7 +56,7 @@ const Home = () => {
     } else {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?apikey=${APIKey}&s=${search}&page=${page}`
+          `https://www.omdbapi.com/?apikey=${APIKey}&s=${search}&page=${page}`
         );
         setMovies(response.data.Search);
       } catch (error) {
